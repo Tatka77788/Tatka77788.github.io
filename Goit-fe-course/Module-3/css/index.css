@@ -1,7 +1,6 @@
 .wrapper {
   width: 900px;
   margin: 0 auto;
-  height: 2080px;
 }
 .navigation ul {
   text-align: center;
@@ -19,7 +18,7 @@
 .li {
   text-decoration: none;
   font-size: 14px;
-  font-family: "Playfair Display";
+  font-family: "Playfair Display", serif;
   color: #626262;
   text-transform: uppercase;
   line-height: 1.714;
