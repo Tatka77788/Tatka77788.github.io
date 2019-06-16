@@ -8,6 +8,7 @@
 .navigation li {
   display: inline-block;
   text-transform: uppercase;
+  font-family: "Playfair Display", serif;
   margin-top: 75px;
   margin-bottom: 100px;
   margin-right: 100px;
