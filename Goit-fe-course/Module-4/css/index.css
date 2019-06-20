@@ -55,7 +55,7 @@
 .site-navigation li {
   text-decoration: none;
   font-size: 14px;
-  font-family: "Open Sans";
+  font-family: "Open Sans", serif;
   font-weight: 700;
   color: #0f0101;
   font-weight: bold;
@@ -82,24 +82,19 @@
   text-transform: uppercase;
   line-height: 0.667;
   font-weight: 900;
-  position: relative;
-  margin-bottom: 132px;
+  margin-bottom: 92px;
 }
 .title:after {
   content: "";
-  display: inline-block;
-  vertical-align: middle;
-  position: absolute;
+  display: block;
   height: 7px;
   width: 167px;
   background: #1abc9c;
-  margin-top: 68px;
-  left: 504px;
-  right: 504px;
+  margin: 0 auto;
+  margin-top: 32px;
 }
 .featured-products {
   font-size: 0;
-
 }
 .products {
   list-style: none;
@@ -108,24 +103,20 @@
   font-size: 18px;
   font-weight: bold;
 }
-
 .products-info {
   float: left;
   width: 255px;
 }
-.products-info:not(:nth-child(4n)){
+.products-info:not(:nth-child(4n)) {
   margin-right: 30px;
 }
 .products-info {
   margin-bottom: 32px;
 }
-.products-info:nth-child(5){
+.products-info:nth-child(5) {
   height: 322px;
 }
-.clearfix {
-  overflow: auto;
-}
-.items-img {
+.img {
   display: block;
   min-width: 100%;
   height: auto;
@@ -136,28 +127,27 @@
   background-color: #323232;
   text-align: center;
   color: #ffffff;
-  display:block;
+  display: block;
 }
-.items-name{
+.items-name {
   float: left;
-  padding: 14px 17px 8px 13px;
+  padding: 10px 17px 8px 13px;
 }
-.price{
+.price {
   float: right;
   width: 54px;
   height: 40px;
   color: #ffffff;
   text-align: center;
-  background-color: rgb(255, 255, 255);
-  opacity: 0.439;
+  padding: 10px 12px;
+  background-color: rgba(255, 255, 255, 0.4);
 }
-.products-info:hover>.items-info{
+.products-info:hover .items-info {
   background: #1abc9c;
 }
-
 .products:after {
   content: "";
-  display: block;
+  display: table;
   clear: both;
 }
 .news {
@@ -167,36 +157,34 @@
   float: left;
   width: 350px;
 }
-.news-info:not(:nth-child(3n)){
+.news-info:not(:nth-child(3n)) {
   margin-right: 30px;
 }
 .news-title {
   font-size: 18px;
-  font-family: "Open Sans";
+  font-family: "Open Sans",serif;
   color: #555252;
   line-height: 1.444;
   font-weight: 600;
-  position: relative;
   margin-top: 15px;
   margin-bottom: 42px;
 }
 .news-title:after {
   content: "";
-  display: inline-block;
+  display: block;
   text-align: left;
-  position: absolute;
+  margin: 0 auto;
+  margin-left: 0;
   height: 5px;
   width: 136px;
   background: #1abc9c;
-  margin-top: 40px;
-  right: 216px;
-  margin-bottom: 24px;
+  margin-top: 14px;
+  margin-bottom: 28px;
 }
 .news-text {
   margin-bottom: 20px;
-  margin-top: 48px;
   font-size: 14px;
-  font-family: "Myriad Pro";
+  font-family: "Open Sans", serif;
   font-weight: 400;
   color: #555252;
   line-height: 1.857;
@@ -205,8 +193,8 @@
   display: inline-block;
   text-align: center;
   margin-right: 190px;
-  font-family: "Open Sans";
-  color:#ffffff;
+  font-family: "Open Sans", serif;
+  color: #ffffff;
   font-weight: 300;
   font-size: 16px;
   margin: 0 auto;
