@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 .wrapper {
-  width: 1170px;
+  width: 1110px;
   margin: 0 auto;
 }
 .logo {
@@ -18,11 +18,25 @@
 }
 .site-navigation li {
   display: inline-block;
+  text-transform: uppercase;
+  margin-top: 42px;
+  margin-right: 36px;
+  margin-bottom: 110px;
 }
-.page-header:after {
-  content: "";
-  display: table;
-  clear: both;
+.site-navigation li:last-child {
+  margin-right: 30px;
+}
+.site-navigation li a {
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "Open Sans", serif;
+  font-weight: 700;
+  color: #0f0101;
+  font-weight: bold;
+}
+.site-navigation li a:hover {
+  color: #1abc9c;
+  text-decoration: none;
 }
 .logo {
   font-size: 30px;
@@ -31,8 +45,7 @@
   color: #555252;
   text-transform: uppercase;
   line-height: 1.067;
-  text-decoration: none;
-  margin-left: 30px;
+  text-decoration-line: none;
   margin-top: 38px;
   margin-bottom: 102px;
 }
@@ -42,34 +55,7 @@
   color: #1abc9c;
   font-weight: bold;
 }
-.site-navigation li {
-  text-decoration: none;
-  text-transform: uppercase;
-  margin-top: 42px;
-  margin-right: 36px;
-  margin-bottom: 110px;
-}
-.site-navigation li:last-child {
-  margin-right: 30px;
-}
-.site-navigation li {
-  text-decoration: none;
-  font-size: 14px;
-  font-family: "Open Sans", serif;
-  font-weight: 700;
-  color: #0f0101;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-.site-navigation li a {
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #0f0101;
-}
-.site-navigation li a:hover {
-  color: #1abc9c;
-}
-#header::after {
+.clearfix::after {
   content: "";
   display: block;
   clear: both;
@@ -93,9 +79,6 @@
   margin: 0 auto;
   margin-top: 32px;
 }
-.featured-products {
-  font-size: 0;
-}
 .products {
   list-style: none;
   font-family: "Roboto", sans-serif;
@@ -113,9 +96,6 @@
 .products-info {
   margin-bottom: 32px;
 }
-.products-info:nth-child(5) {
-  height: 322px;
-}
 .img {
   display: block;
   min-width: 100%;
@@ -127,7 +107,7 @@
   background-color: #323232;
   text-align: center;
   color: #ffffff;
-  display: block;
+  display: inline-block;
 }
 .items-name {
   float: left;
@@ -145,7 +125,7 @@
 .products-info:hover .items-info {
   background: #1abc9c;
 }
-.products:after {
+.clearfix::after {
   content: "";
   display: table;
   clear: both;
@@ -162,7 +142,7 @@
 }
 .news-title {
   font-size: 18px;
-  font-family: "Open Sans",serif;
+  font-family: "Open Sans", serif;
   color: #555252;
   line-height: 1.444;
   font-weight: 600;
@@ -192,6 +172,8 @@
 .btn {
   display: inline-block;
   text-align: center;
+  text-decoration: none;
+  border-radius: 3px;
   margin-right: 190px;
   font-family: "Open Sans", serif;
   color: #ffffff;
