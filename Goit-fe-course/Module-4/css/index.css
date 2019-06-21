@@ -102,12 +102,9 @@
   height: auto;
 }
 .items-info {
-  width: 255px;
-  height: 40px;
   background-color: #323232;
   text-align: center;
   color: #ffffff;
-  display: inline-block;
 }
 .items-name {
   float: left;
@@ -117,9 +114,9 @@
   float: right;
   width: 54px;
   height: 40px;
+  margin: 0 auto;
+  line-height: 1.778;
   color: #ffffff;
-  text-align: center;
-  padding: 10px 12px;
   background-color: rgba(255, 255, 255, 0.4);
 }
 .products-info:hover .items-info {
