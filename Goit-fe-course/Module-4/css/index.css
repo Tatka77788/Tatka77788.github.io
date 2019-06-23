@@ -89,12 +89,10 @@
 .products-info {
   float: left;
   width: 255px;
+  margin-bottom: 32px;
 }
 .products-info:not(:nth-child(4n)) {
   margin-right: 30px;
-}
-.products-info {
-  margin-bottom: 32px;
 }
 .img {
   display: block;
