@@ -39,21 +39,24 @@
   text-decoration: none;
 }
 .logo {
+  margin-top: 38px;
+  margin-bottom: 102px;
+}
+.logo-link {
+  text-decoration: none;
   font-size: 30px;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   color: #555252;
   text-transform: uppercase;
   line-height: 1.067;
-  text-decoration-line: none;
-  margin-top: 38px;
-  margin-bottom: 102px;
 }
 .logo::first-letter {
   font-size: 30px;
   font-family: "Roboto", sans-serif;
   color: #1abc9c;
   font-weight: bold;
+  text-decoration: none;
 }
 .clearfix::after {
   content: "";
