@@ -24,7 +24,7 @@
   margin-bottom: 110px;
 }
 .site-navigation li:last-child {
-  margin-right: 30px;
+  margin-right: 0px;
 }
 .site-navigation li a {
   text-decoration: none;
@@ -57,7 +57,7 @@
 }
 .clearfix::after {
   content: "";
-  display: block;
+  display: table;
   clear: both;
 }
 .title {

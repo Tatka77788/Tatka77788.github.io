@@ -19,7 +19,7 @@
   <body>
     <header class="page-header clearfix">
       <div class="wrapper">
-        <nav>
+        <nav class="clearfix">
           <a href="#">
             <h1 class="logo">Mart</h1>
           </a>
@@ -31,67 +31,75 @@
             <li><a href="#">Blog</a></li>
             <li><a href="#">Contact us</a></li>
           </ul>
-        </nav>  
+        </nav>
+      </div>
     </header>
     <main>
       <section class="slider-content">
         <div class="slider">
-            <div class="container">
-        <button class="arrow arrow-left">
-            <img src="./img/arrow-left.png" alt="arrow left">
-        </button>
-        <button class="arrow arrow-right">
-            <img src="./img/arrow-right.png" alt="arrow right">
-        </button>
-        <h2 class="slider-title">Affordable Paris tours</h2>
-        <p class="title-choose">City tours/tour tickets/tour guides</p>
-    </div>
-    </div>
+          <div class="overlay"></div>
+          <div class="wrapper slider-info">
+            <button class="arrow arrow-left">
+              <img src="./img/arrow-left.png" alt="arrow left" />
+            </button>
+            <button class="arrow arrow-right">
+              <img src="./img/arrow-right.png" alt="arrow right" />
+            </button>
+            <div class="slider-text">
+            <h2 class="slider-title">Affordable Paris tours</h2>
+            <p class="title-choose">City tours/tour tickets/tour guides</p>
+            </div>
+          </div>
+        </div>
       </section>
       <section class="collection">
-          <div class="new-collection ">
+        <div class="new-collection ">
           <h2 class="new-collection-title">New collection</h2>
-          <ul class="collection-items">
-              <li class="items">
-                  <a href="#">
-                      <img src="./img/photo1.png" alt="man in blue tshirt">
-                  </a>
-                 <div class="item-info">
-                     <h3 class="item-name">Blue tshirt</h3>
-                     <p class="price">&#36;26</p>
-                 </div>
-                </li>
-                <li class="items">
-                        <a href="#">
-                            <img src="./img/photo2.png" alt="woman shirt">
-                        </a>
-                       <div class="item-info">
-                           <h3 class="item-name">Woman shirt</h3>
-                           <p class="price">&#36;31</p>
-                       </div>
-                      </li>
-                      <li class="items">
-                            <a href="#">
-                                <img src="./img/photo3.png" alt="yellow tshirt">
-                            </a>
-                           <div class="item-info">
-                               <h3 class="item-name">Yellow tshirt</h3>
-                               <p class="price">&#36;21</p>
-                           </div>
-                          </li>
-                          <li class="items">
-                                <a href="#">
-                                    <img src="./img/photo4.png" alt="cool lingerie">
-                                </a>
-                               <div class="item-info">
-                                   <h3 class="item-name">Cool lingerie</h3>
-                                   <p class="price">&#36;56</p>
-                               </div>
-                              </li>
+          <ul class="collection-items clearfix">
+            <li class="items">
+              <a href="#">
+                <img src="./img/photo1.png" alt="man in blue tshirt" />
+              </a>
+              <div class="item-info clearfix">
+                <h3 class="item-name">Blue tshirt</h3>
+                <p class="price">&#36;26</p>
+              </div>
+            </li>
+            <li class="items">
+              <a href="#">
+                <img src="./img/photo2.png" alt="woman shirt" />
+              </a>
+              <div class="item-info clearfix">
+                <h3 class="item-name">Woman shirt</h3>
+                <p class="price">&#36;31</p>
+              </div>
+            </li>
+            <li class="items">
+              <a href="#">
+                <img src="./img/photo3.png" alt="yellow tshirt" />
+              </a>
+              <div class="item-info clearfix">
+                <h3 class="item-name">Yellow tshirt</h3>
+                <p class="price">&#36;21</p>
+              </div>
+            </li>
+            <li class="items">
+              <a href="#">
+                <img src="./img/photo4.png" alt="cool lingerie" />
+              </a>
+              <div class="item-info clearfix">
+                <h3 class="item-name">Cool lingerie</h3>
+                <p class="price">&#36;56</p>
+              </div>
+            </li>
           </ul>
         </div>
-        </section>
+      </section>
     </main>
-</div>
+    <footer class="background">
+      <div class="desined">
+        All rights reserved
+      </div>
+    </footer>
   </body>
 </html>
