@@ -39,13 +39,16 @@
     height: 2px;
     width: 0%;
     background-color: #f38181;
-    transition: width .3s ease-in-out;
+    transition: transform 200ms linear;
+   /*  transition-duration: 200ms;*/
     margin: 0 auto;
    margin-top: 12px;
   }
   .site-navigation li a:hover::after{
       width: 100%;
       color: #f38181;
+      transition: transform 200ms ease-in-out;
+    /*transition-duration: 200ms;*/
   }
   .site-navigation li a:hover{
     color: #f38181;
@@ -68,7 +71,10 @@
   .title{
       display: flex;
       flex-direction: column;
+  }
+  .servises-tittle{
       padding-top: 114px;
+      padding-bottom: 112px;
   }
   .first-title{
     font-size: 24px;
@@ -87,7 +93,6 @@
     text-transform: uppercase;
     line-height: 1.2;
     text-align: center;
-    margin-bottom: 112px;
   }
   .second-title::after{
     content: "";
@@ -104,26 +109,23 @@
       justify-content: space-between;
       list-style: none;
   }
-  .clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
   .list-item{
       width: 382px;
-      margin-bottom: 102px;
+      display: flex;
+      justify-content: space-between;
   }
+.list-item:nth-child(-n+3){
+  margin-bottom: 100px;
+}
   .list-item::before{
       content: "";
       display: block;
-      float: left;
-      height: 34px;
+      width: 80px;
       margin-right: 28px;
       background-repeat: no-repeat;
-      background-position: left center;
+      background-position:top center;
   }
   .item-info{
-      float: right;
       width: 300px;
   }
   .icon-alarm::before{
@@ -156,9 +158,148 @@
 }
 .item-description{
     font-size: 15px;
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
     color: rgb(153, 153, 153);
     line-height: 1.6;
     text-align: left;
     font-weight: 400;
+}
+.team-tittle{
+  padding-top: 92px;
+  padding-bottom: 46px;
+}
+.team-tittle-description{
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  color: rgb(153, 153, 153);
+  line-height: 1.6;
+  text-align: center;
+  padding-bottom: 84px;
+}
+.ul {
+  list-style: none;
+}
+.team-list{
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-list-item-img{
+  background-color:#95e1d3;
+  position: relative;
+}
+.item-img{
+  display: block;
+ position: relative;
+  max-width: 100%;
+  height: auto;
+ top: 0;
+  left: 0;
+  transition: left top 0.2s linear;
+}
+.team-list-item:hover .item-img{
+  left: -12px;
+  top: -12px;
+}
+.team-list-item-block{
+  position: absolute;
+  transition: opacity  .2s linear;
+  opacity: 0;
+  align-items: center;
+  top: -12px;
+  left: -12px;
+  background-image: linear-gradient( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
+}
+.team-list-item:hover .team-list-item-block{
+  opacity: 1;
+}
+.social-icon{
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  margin:  auto;
+  width: 224px;
+  height: 56px;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+.team-item-social-icon{
+  margin: 0 auto;
+  width: 56px;
+  height: 56px;
+  padding-top: 16px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color .2s linear;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 26px;
+  background-color: #fce38a;
+  box-sizing: border-box;
+  border-style: solid;
+  border-right-width: 1px;
+  border-right-color: rgba(243, 129, 129, 0.5);
+}
+.team-item-social-icon:last-child{
+border-right-width: 0px;
+}
+
+.social-icon .team-item-social-icon:hover{
+  background-color: #95e1d3;
+}
+.info-name{
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(51, 51, 51);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  font-weight: 400;
+  padding-top: 30px;
+}
+.info-prof{
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  color: rgb(153, 153, 153);
+  font-style: italic;
+  line-height: 1.6;
+  text-align: center;
+  font-weight: 300i;
+  padding-top: 16px;
+  padding-bottom: 88px;
+}
+.foot-info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 62px; 
+  border-top: 1px solid #e7e7e7
+}
+.foot-text{
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(51, 51, 51);
+  line-height: 1.2;
+  font-weight: 400;
+}
+.foot-link{
+  color: #f38181;
+  text-decoration: none;
+}
+.input-field {
+  width: 230px;
+  height: 40px;
+  border: 1px solid #e7e7e7;
+}
+.input-button {
+  background-color: rgb(149, 225, 211);
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 12px 34px;
 }

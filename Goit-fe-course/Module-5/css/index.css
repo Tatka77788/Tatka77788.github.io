@@ -133,10 +133,6 @@
 }
 .collection {
   background-color: rgb(233, 240, 253);
-  /*width: 1600px;
-  margin: 0 auto;
-  height: auto;
-  position: relative;*/
 }
 .new-collection {
   width: 1110px;
@@ -151,7 +147,6 @@
   line-height: 0.667;
   text-align: center;
   margin-bottom: 82px;
- /* position: relative;*/
   padding-top: 100px;
 }
 .new-collection-title:after {
@@ -283,6 +278,11 @@
   line-height: 1.778;
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0.4);
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 .items:hover .hover-block {
   display: inline-block;
