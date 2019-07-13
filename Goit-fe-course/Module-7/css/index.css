@@ -203,6 +203,7 @@
     width: 240px;
     height: 65px;
     border-radius: 3px;
+    border: none;
   background-color: rgb(254, 209, 54);
   font-size: 18px;
   font-family: "Montserrat", sans-serif;
