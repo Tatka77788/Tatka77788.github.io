@@ -27,12 +27,8 @@
     </header>
     <main>
       <section class="services wrapper">
-        <h2 class="title servises-tittle">
-          <span class="first-title">Services</span>
-          <span class="second-title"
-            >Lorem ipsum dolor sit amet consectetur.
-          </span>
-        </h2>
+        <h2 class="title">Services</h2>
+        <p class="title-description">Lorem ipsum dolor sit amet consectetur.</p>
         <ul class="services-list">
           <li class="list-item icon-basket">
             <div class="item-info">
@@ -65,11 +61,10 @@
       </section>
       <section class="contacts">
         <div class="contact-us wrapper">
-          <h2 class=" title contact-title">
-            <span class="first-contact-title">Contact Us</span>
-            <span class="second-contact-title"
-              >Lorem ipsum dolor sit amet.</span >
-          </h2>
+          <h2 class="contact-title">Contact us</h2>
+          <p class="contact-title-description">
+            Lorem ipsum dolor sit amet consectetur.
+          </p>
         </div>
         <form action="#" class="wrapper">
           <div class="input-area">
@@ -79,26 +74,33 @@
                 type="text"
                 name="name"
                 size="20"
-                placeholder="Your name*" />
+                required="required"
+                placeholder="Your name*"
+              />
               <input
                 class="input-row input-valid"
                 type="email"
                 name="email"
                 size="20"
-                placeholder="Your-email*"/>
+                required="required"
+                placeholder="Your-email*"
+              />
               <input
                 class="input-row"
                 type="text"
                 name="subject"
                 size="20"
-                placeholder="Subject"/>
+                placeholder="Subject"
+              />
             </div>
             <textarea
               class="input-text input-valid"
               name="message"
               rows="5"
               cols="45"
-              placeholder="Your message*">
+              required="required"
+              placeholder="Your message*"
+            >
             </textarea>
           </div>
           <input class="input-button" type="submit" value="send message" />
