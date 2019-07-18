@@ -1,0 +1,163 @@
+.partners {
+    padding-top: 70px;
+    margin: 0 auto;
+    max-width: 90%;
+}
+.partners-title{
+    margin: 0 auto;
+   font-size: 22px;
+  font-family: "Montserrat Bold", sans-serif;
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.li{
+    list-style: none;
+}
+.ul{
+    margin: 0;
+    padding: 0;
+}
+.partner-list{
+    margin: 0 auto;
+}
+.partner-item{
+    text-align: center;
+    width: 222px;
+    margin: 0 auto;  
+    position: relative;
+}
+.partner-img{
+    position: relative;
+}
+.img-partner{
+    position: relative;
+}
+.img-partner::after{
+    content: "";
+    position: absolute;
+    right: 50px;
+    bottom: 0;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    background-position:center;
+    background-size: 18px;
+    border:  4px solid rgb(255, 255, 255);
+    border-radius: 50%;
+}
+.icon-tv::after{
+    background-image: url(../../img/tv.png);
+    background-color: rgb(255, 78, 80);
+}
+.icon-chemistry::after{
+    background-image: url(../../img/chemistry.png);
+    background-color:#ffa507;
+}
+.icon-cup::after{
+    background-image: url(../../img/cup.png);
+    background-color: #1cd7ad;
+}
+.icon-fly::after{
+    background-image: url(../../img/fly.png);
+    background-color: #4e73db;
+}
+.find-partner{
+    margin-bottom: 30px;
+}
+.partner-name{
+  font-size: 14px;
+  font-family:"Montserrat Bold", sans-serif ;
+  color: #333333;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+  margin-top: 18px;
+  margin-bottom: 20px;
+}
+.partner-description{
+    font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  color:#666666 ;
+  line-height: 1.2;
+  text-align: center;
+}
+.see-more-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-family: "Montserrat Bold", sans-serif;
+  color: rgb(255, 78, 80);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid rgb(255, 78, 80);
+  width: 278px;
+  height: 36px;
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  margin: 0 auto;
+  margin-bottom: 56px;
+}
+
+@media screen and (min-width:748px){
+    .partners{
+        margin-bottom: 74px;
+        max-width: 100%;
+    }
+    .partners-title{
+        margin-bottom: 32px;
+    }
+    .partner-list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+    .find-partner{
+        margin-right: 30px;
+    }
+    .find-partner:last-child{
+        margin-right: 0;
+    }
+    .find-partner:nth-child(odd){
+        margin-bottom: 58px;
+    }
+    .partner-lucas{
+        order:1;
+    }
+    .partner-four{
+        order: 2;
+    }
+    .see-more-button{
+        margin-bottom: 40px;
+    }
+ 
+}
+@media screen and (min-width:940px){
+    .partners{
+        margin-bottom: 72px;
+        min-width: 100%; 
+    }
+    .partner-list{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .find-partner{
+        margin-bottom: 40px;
+        margin-right: 16px;
+    }
+    .find-partner:last-child{
+        margin-right: 0;
+    }
+    .see-more-button{
+        margin-bottom: 74px;
+    }
+}
