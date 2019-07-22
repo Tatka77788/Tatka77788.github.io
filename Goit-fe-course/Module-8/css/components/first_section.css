@@ -21,8 +21,10 @@
 .header-buttons {
   display: flex;
   justify-content: center;
+  align-items: center;
+  align-content: center;
 }
-.header-buttons-submit {
+.header-button {
   font-size: 14px;
   font-family: "Montserrat Bold", sans-serif;
   color: #ffffff;
@@ -31,15 +33,17 @@
   text-align: center;
   border: none;
   background-color: transparent;
-}
-.header-buttons-submit:hover {
-  border: 2px solid #ffffff;
-  width: 88px;
+  cursor: pointer;
+  padding: 0;
+  width: 86px;
   height: 30px;
+}
+.header-button:hover {
+  border: 2px solid #ffffff;
   border-radius: 20px;
   background-color: rgba(26, 25, 21, 0);
 }
-.header-buttons-submit:first-child {
+.header-button:first-child {
   margin-right: 20px;
 }
 

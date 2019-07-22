@@ -31,6 +31,10 @@
 }
 .partner-img{
     position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: rgb(251, 251, 251)
 }
 .img-partner{
     position: relative;
