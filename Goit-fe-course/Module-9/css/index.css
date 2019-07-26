@@ -1,0 +1,334 @@
+@import "../css/fonts.css";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  min-width: 320px;
+  max-width: 940px;
+  margin: 0 auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+.container-fluid {
+  min-width: 100%;
+}
+.banner {
+  background-color: rgb(26, 25, 21);
+  background-image: url(../../img/mobile.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 540px;
+  width: 100%;
+}
+.masthead {
+  margin-bottom: 116px;
+}
+.header-buttons {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+.header-button-log {
+  font-size: 14px;
+  font-family: "Montserrat Bold", sans-serif;
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+  width: 86px;
+  height: 30px;
+  padding: 0;
+}
+.header-button-log:hover {
+  border: 2px solid #ffffff;
+  border-radius: 20px;
+  background-color: rgba(26, 25, 21, 0);
+}
+.header-button-log:first-child {
+  margin-right: 20px;
+}
+.logo-dublicate {
+  text-align: center;
+}
+.logo {
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Montserrat Bold", sans-serif;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin: 0 auto;
+  text-align: center;
+  cursor: pointer;
+}
+.logo:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
+.banner-logo {
+  margin-bottom: 40px;
+}
+.banner-title {
+  font-size: 30px;
+  font-family: "Montserrat Bold", sans-serif;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 18px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.banner-description {
+  font-size: 18px;
+  font-family: "Roboto Light", sans-serif;
+  color: #ffffff;
+  line-height: 1.2;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+.banner-button {
+  font-size: 14px;
+  font-family: "Montserrat Bold", sans-serif;
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 0 auto;
+  width: 280px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(255, 78, 80);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner-button:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
+.partners {
+  padding-top: 70px;
+  margin: 0 auto;
+  max-width: 90%;
+}
+.partners-title {
+  margin: 0 auto;
+  font-size: 22px;
+  font-family: "Montserrat Bold", sans-serif;
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.partner-list {
+  margin: 0 auto;
+}
+.partner-item {
+  text-align: center;
+  width: 222px;
+  margin: 0 auto;
+  position: relative;
+}
+.partner-img {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: rgb(251, 251, 251);
+}
+.img-partner {
+  position: relative;
+}
+.img-partner::after {
+  content: "";
+  position: absolute;
+  right: 50px;
+  bottom: 0;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  background-position: center;
+  border: 4px solid rgb(255, 255, 255);
+  border-radius: 50%;
+}
+.icon-tv::after {
+  background-image: url(../../img/tv.png);
+  background-color: rgb(255, 78, 80);
+}
+.icon-chemistry::after {
+  background-image: url(../../img/chemistry.png);
+  background-color: #ffa507;
+}
+.icon-cup::after {
+  background-image: url(../../img/cup.png);
+  background-color: #1cd7ad;
+}
+.icon-fly::after {
+  background-image: url(../../img/fly.png);
+  background-color: #4e73db;
+}
+.find-partner {
+  margin-bottom: 30px;
+}
+.partner-name {
+  font-size: 14px;
+  font-family: "Montserrat Bold", sans-serif;
+  color: #333333;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+  margin-top: 18px;
+  margin-bottom: 20px;
+}
+.partner-description {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  color: #666666;
+  line-height: 1.2;
+  text-align: center;
+}
+.see-more-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-family: "Montserrat Bold", sans-serif;
+  color: rgb(255, 78, 80);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid rgb(255, 78, 80);
+  width: 280px;
+  height: 36px;
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  margin: 0 auto;
+  margin-bottom: 56px;
+}
+.see-more-button:hover {
+  text-decoration: none;
+  color: rgb(255, 78, 80);
+}
+
+@media screen and (min-width: 748px) {
+  .banner {
+    background-image: url(../img/tablet.png);
+    height: 700px;
+  }
+  .container {
+    width: 748px;
+  }
+  .masthead {
+    margin-bottom: 160px;
+  }
+  .masthead-row {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    text-decoration: none;
+  }
+  .header-buttons {
+    padding-top: 0;
+  }
+  .row {
+    width: 100%;
+  }
+  .banner-title {
+    font-size: 52px;
+    margin-bottom: 40px;
+  }
+  .banner-description {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+  .banner-button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 232px;
+  }
+  .partners {
+    margin-bottom: 74px;
+    max-width: 100%;
+  }
+  .partners-title {
+    margin-top: 72px;
+    margin-bottom: 32px;
+  }
+  .partner-list {
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+  .find-partner {
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 30px;
+  }
+  .find-partner:last-child {
+    margin-right: 0;
+  }
+  .find-partner:nth-child(odd) {
+    margin-bottom: 58px;
+  }
+  .partner-lucas {
+    order: 1;
+  }
+  .partner-four {
+    order: 2;
+  }
+  .see-more-button {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 940px) {
+  .banner {
+    background-image: url(../img/desktop.png);
+    height: 700px;
+  }
+  .masthead {
+    margin-bottom: 170px;
+  }
+  .masthead-row {
+    padding-top: 44px;
+  }
+  .container {
+    width: 940px;
+  }
+  .partners {
+    margin-bottom: 72px;
+    min-width: 100%;
+  }
+  .find-partner {
+    margin-bottom: 40px;
+  }
+  .find-partner {
+    margin-right: 0px;
+  }
+  .see-more-button {
+    margin-bottom: 74px;
+  }
+}
