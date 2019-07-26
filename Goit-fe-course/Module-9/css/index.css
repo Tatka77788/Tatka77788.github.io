@@ -173,19 +173,19 @@
   border-radius: 50%;
 }
 .icon-tv::after {
-  background-image: url(../../img/tv.png);
+  background-image: url(../img/tv.png);
   background-color: rgb(255, 78, 80);
 }
 .icon-chemistry::after {
-  background-image: url(../../img/chemistry.png);
+  background-image: url(../img/chemistry.png);
   background-color: #ffa507;
 }
 .icon-cup::after {
-  background-image: url(../../img/cup.png);
+  background-image: url(../img/cup.png);
   background-color: #1cd7ad;
 }
 .icon-fly::after {
-  background-image: url(../../img/fly.png);
+  background-image: url(../img/fly.png);
   background-color: #4e73db;
 }
 .find-partner {
