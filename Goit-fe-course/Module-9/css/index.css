@@ -173,6 +173,7 @@
   border-radius: 50%;
 }
 .icon-tv::after {
+  position: absolute;
   background-image: url(../img/tv.png);
   background-color: rgb(255, 78, 80);
 }
