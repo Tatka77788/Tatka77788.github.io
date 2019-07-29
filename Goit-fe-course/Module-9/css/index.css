@@ -1,19 +1,4 @@
 @import "../css/fonts.css";
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-.container {
-  min-width: 320px;
-  max-width: 940px;
-  margin: 0 auto;
-  padding-left: 0;
-  padding-right: 0;
-}
-.container-fluid {
-  min-width: 100%;
-}
 .banner {
   background-color: rgb(26, 25, 21);
   background-image: url(../../img/mobile.png);
@@ -27,8 +12,6 @@
   margin-bottom: 116px;
 }
 .header-buttons {
-  display: flex;
-  justify-content: center;
   padding-top: 30px;
 }
 .header-button-log {
@@ -42,7 +25,6 @@
   background-color: transparent;
   width: 86px;
   height: 30px;
-  padding: 0;
 }
 .header-button-log:hover {
   border: 2px solid #ffffff;
@@ -83,9 +65,6 @@
   line-height: 1.2;
   text-align: center;
   margin-bottom: 18px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
 }
 .banner-description {
   font-size: 18px;
@@ -95,8 +74,6 @@
   font-weight: 300;
   text-align: center;
   margin-bottom: 20px;
-  display: flex;
-  justify-content: center;
 }
 .banner-button {
   font-size: 14px;
@@ -113,8 +90,6 @@
   border-radius: 20px;
   border: none;
   background-color: rgb(255, 78, 80);
-  display: flex;
-  justify-content: center;
   align-items: center;
 }
 .banner-button:hover {
@@ -123,7 +98,6 @@
 }
 .partners {
   padding-top: 70px;
-  margin: 0 auto;
   max-width: 90%;
 }
 .partners-title {
@@ -141,9 +115,7 @@
   margin: 0;
   padding: 0;
 }
-.partner-list {
-  margin: 0 auto;
-}
+
 .partner-item {
   text-align: center;
   width: 222px;
@@ -210,8 +182,6 @@
   text-align: center;
 }
 .see-more-button {
-  display: flex;
-  justify-content: center;
   align-items: center;
   font-size: 14px;
   font-family: "Montserrat Bold", sans-serif;
@@ -238,26 +208,17 @@
     background-image: url(../img/tablet.png);
     height: 700px;
   }
-  .container {
-    width: 748px;
-  }
   .masthead {
     margin-bottom: 160px;
   }
   .masthead-row {
     padding-top: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
   }
   .logo {
     text-decoration: none;
   }
   .header-buttons {
     padding-top: 0;
-  }
-  .row {
-    width: 100%;
   }
   .banner-title {
     font-size: 52px;
@@ -268,8 +229,6 @@
     margin-bottom: 40px;
   }
   .banner-button {
-    display: flex;
-    justify-content: center;
     margin-bottom: 232px;
   }
   .partners {
@@ -277,7 +236,6 @@
     max-width: 100%;
   }
   .partners-title {
-    margin-top: 72px;
     margin-bottom: 32px;
   }
   .partner-list {
@@ -285,8 +243,6 @@
     margin-bottom: 40px;
   }
   .find-partner {
-    padding-left: 0;
-    padding-right: 0;
     margin-right: 30px;
   }
   .find-partner:last-child {
