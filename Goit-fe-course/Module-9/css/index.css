@@ -1,7 +1,7 @@
 @import "../css/fonts.css";
 .banner {
   background-color: rgb(26, 25, 21);
-  background-image: url(../../img/mobile.png);
+  background-image: url(../img/mobile.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
