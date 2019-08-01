@@ -1,12 +1,12 @@
 @import "../css/fonts.css";
 .banner {
   background-color: rgb(26, 25, 21);
-  background-image: url(../img/mobile.png);
-  background-position: center;
+  background-image: url(../img/banner-mobile.png);
+  background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 540px;
-  width: 100%;
+  min-width: 100vw;
 }
 .masthead {
   margin-bottom: 116px;
