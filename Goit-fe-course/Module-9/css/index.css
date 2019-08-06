@@ -2,11 +2,11 @@
 .banner {
   background-color: rgb(26, 25, 21);
   background-image: url(../img/banner-mobile.png);
-  background-position: top center;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 540px;
-  min-width: 100vw;
+  min-width: 100%;
 }
 .masthead {
   margin-bottom: 116px;
