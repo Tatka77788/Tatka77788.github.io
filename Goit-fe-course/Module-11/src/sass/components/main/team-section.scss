@@ -1,0 +1,138 @@
+.team-headline {
+  margin-bottom: 46px;
+  @extend %flex__jc__center;
+}
+.team__description {
+  font-size: $secondary-font-size;
+  font-family: $secondary-font;
+  color: $secondary-container-color;
+  line-height: $secondary-line-height;
+  text-align: center;
+  padding-bottom: 94px;
+}
+.team-list {
+  @extend %flex__jc__space-between;
+}
+.team-list__item {
+  list-style: none;
+  width: 380px;
+
+  &:hover .team-list__img {
+    left: -12px;
+    top: -12px;
+  }
+}
+
+.team-list__item__img {
+  background-color: #95e1d3;
+  position: relative;
+  margin-bottom: 30px;
+}
+.team-list__img {
+  position: relative;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.team-list__item__hover-block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(rgba(252, 227, 138, 0.7)),
+    to(rgba(243, 129, 129, 0.7))
+  );
+  background-image: -o-linear-gradient(
+    left,
+    rgba(252, 227, 138, 0.7) 0%,
+    rgba(243, 129, 129, 0.7) 100%
+  );
+  background-image: linear-gradient(
+    90deg,
+    rgba(252, 227, 138, 0.7) 0%,
+    rgba(243, 129, 129, 0.7) 100%
+  );
+  @extend %flex__ai__center;
+}
+.team-list__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.team-list__social__icon {
+ @extend %flex__ai__center;
+ width: 56px;
+  height: 56px;
+  padding-top: 16px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: background-color 0.2s linear;
+  -o-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 26px;
+  background-color: #fce38a;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: none;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: rgba(243, 129, 129, 0.5);
+  fill: $sub-color;
+
+  &:last-child {
+    border-right-width: 0px;
+  }
+}
+
+.team-list__item:hover .team-list__item__hover-block {
+  opacity: 1;
+  left: -12px;
+  top: -12px;
+}
+
+.team-list__social .team-list__social__icon:hover {
+  background-color: $sub-color;
+  fill: $main-bn-color;
+}
+.team-list__item__name {
+  font-size: $main-font-size;
+  font-family: $main-font;
+  color: $main-container-color;
+  text-transform: uppercase;
+  line-height: $main-line-height;
+  text-align: center;
+  font-weight: $regular-weight;
+  margin-bottom: 16px;
+}
+.team-list__item__prof {
+  font-size: $secondary-font-size;
+  font-family: $secondary-font;
+  color: $secondary-container-color;
+  line-height: $secondary-line-height;
+  text-align: center;
+  font-weight: $light-weight;
+  font-style: italic;
+  margin-bottom: 88px;
+}

@@ -1,0 +1,54 @@
+.slider {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    @extend %flex__jc__center;
+  }
+  .slider-title {
+    text-align: center;
+    color: $main-bn-color;
+    margin-bottom: 126px;
+    @extend %flex__jc__center;
+  }
+  .slider-title--first {
+    font-size: 72px;
+    font-family: $script-font;
+    line-height: $main-line-height;
+    margin-bottom: 42px;
+  }
+  .slider-title--second {
+    font-size: 150px;
+    font-family: $main-font;
+    font-weight: $bold-weight;
+    text-transform: uppercase;
+    line-height: 0.933;
+    text-align: center;
+    width: 820px;
+  }
+  .slider-link{
+    width: 156px;
+    height: 36px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: $main-bn-color;
+    background-color: transparent;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+            align-items: center;
+  }
+  .slider-link--press{
+    text-decoration: none;
+    font-size: $main-font-size;
+    font-family: $main-font;
+    color: $main-bn-color;
+    font-weight: $bold-weight;
+    text-transform: uppercase;
+    line-height: $main-line-height;
+    text-align: center;
+    cursor: pointer;
+    margin: 0 auto;
+  }

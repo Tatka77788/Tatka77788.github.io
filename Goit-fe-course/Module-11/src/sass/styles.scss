@@ -1,0 +1,24 @@
+/*
+   Import partials below
+*/
+@import './base.scss';
+@import './normalize';
+@import './helpers/variables';
+@import './helpers/placeholder.scss';
+
+/* components*/
+@import 'components/banner';
+@import 'components/container';
+@import 'components/header/page-header'; 
+@import 'components/header/site-logo';
+@import 'components/header/page-nav';
+@import 'components/slider-section';
+@import 'components/main/services-section';
+@import 'components/main/team-section';
+@import 'components/footer/foot-info';
+
+/*@import '';
+@import '';
+@import '';
+@import '';
+*/

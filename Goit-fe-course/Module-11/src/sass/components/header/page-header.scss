@@ -1,0 +1,9 @@
+.page-header {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 30px;
+    margin-bottom: 172px;
+    @extend %flex__jc__space-between;
+  
+}

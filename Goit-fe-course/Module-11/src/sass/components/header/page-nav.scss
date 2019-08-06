@@ -1,0 +1,75 @@
+.page-nav { display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  
+}
+ 
+.site-navigation {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    @extend %flex__jc__space-between;
+ 
+}
+
+.site-navigation__item {text-align: center; list-style: none; margin-right: 52px;
+  
+}
+  
+.site-navigation__link {
+    text-decoration: none;
+    font-size: $main-font-size;
+    font-family: $main-font;
+    color: $main-bn-color;
+    text-transform: uppercase;
+    font-weight: $regular-weight;
+    line-height: $main-line-height;
+  }
+  
+  .navigation-action__item {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .navigation-action__item:first-child {
+    margin-right: 50px;
+  }
+  
+  .site-navigation a::after {
+    display: block;
+    content: "";
+    height: 3px;
+    width: 0%;
+    background-color: $color-hov;
+    -webkit-transition: -webkit-transform 200ms linear;
+    transition: -webkit-transform 200ms linear;
+    -o-transition: transform 200ms linear;
+    transition: transform 200ms linear;
+    transition: transform 200ms linear, -webkit-transform 200ms linear;
+    margin: 0 auto;
+    margin-top: 12px;
+  }
+ 
+  .site-navigation a:hover::after {
+    width: 100%;
+    color: $color-hov;
+    -webkit-transition: -webkit-transform 200ms linear;
+    transition: -webkit-transform 200ms linear;
+    -o-transition: transform 200ms linear;
+    transition: transform 200ms linear;
+    transition: transform 200ms linear, -webkit-transform 200ms linear;
+  }
+  
+  .site-navigation a:hover {
+    color: $color-hov;
+  }
+
+  .navigation-action__btn {
+    fill: $main-bn-color;
+  
+    &:hover {
+    fill:$color-hov;
+  }
+}
